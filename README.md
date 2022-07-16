@@ -1,6 +1,5 @@
 # assert-dsl
-Simple dsl implementation for Junit 5 assertions.
-TODO: To add more complex examples before v1.0 release
+Simple lightweight dsl library for Junit 5 assertions built on top of Junit 5 and kotlin-test
 ```
     @Test
     fun sum() {
@@ -18,6 +17,7 @@ Add the following repo url in repositories
         url = uri("https://maven.pkg.github.com/alpeshvas/assert-dsl")
     }
 ```
+Note: You might need to pass credentials to fetch the artifacts, somehow github doesn't allow using it without credentials.
 Add relevant dependency
 
 ```

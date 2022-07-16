@@ -1,10 +1,10 @@
 package com.alpesh.assertKt
 import kotlin.test.assertEquals
 import kotlin.test.assertNotEquals
-data class Check(val a: Any, val b: Any, val message: String? = null)
+data class Check<T>(val a: T, val b: T, val message: String? = null)
 open class MultiCheckDSL {
-    val checks = mutableListOf<Check>()
-    fun check(expected: Any, actual: Any, message: String? = null) {
+    val checks = mutableListOf<Check<*>>()
+    fun <T> check(expected: T, actual: T, message: String? = null) {
         checks.add(Check(expected, actual, message))
     }
 }
