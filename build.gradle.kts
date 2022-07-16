@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.alpesh.assertKt"
-version = "0.1-SNAPSHOT"
+version = "0.1"
 
 configure<PublishingExtension> {
     repositories {
